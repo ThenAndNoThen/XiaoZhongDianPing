@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">小众点评</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_input_hint">输入商家、分类或商圈</string>
+    <string-array name="resorttype_stringarry">
+        <item>离我最近</item>
+        <item>好评优先</item>
+        <item>人均最低</item>
+        <item>人均最高</item>
+    </string-array>
+    <string-array name="foodtype_stringarry">
+        <item>全部美食</item>
+        <item>中餐厅</item>
+        <item>综合酒楼</item>
+        <item>火锅店</item>
+        <item>日本料理</item>
+        <item>韩国料理</item>
+        <item>快餐厅</item>
+    </string-array>
+
+</resources>

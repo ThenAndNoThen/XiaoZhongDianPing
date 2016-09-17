@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/coloryGray"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.xiaozhongdianping.ui.main.OrderCommentActivity">
+
+    <!-- 标题栏-->
+    <LinearLayout
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!-- 返回-->
+            <LinearLayout
+                android:id="@+id/layoutBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="16dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_arrow_back_white_24dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="评价"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RatingBar
+            android:id="@+id/rb_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyle"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="请滑动星星评分"
+        android:textColor="@color/coloryDarkGray"
+        android:gravity="center"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="4dp">
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:hint="请写下您的评价"
+            android:textColorHint="@color/coloryDarkGray"
+            android:textColor="@android:color/black" />
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="评价"
+        android:id="@+id/comment_button"
+        android:layout_gravity="bottom"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp"
+        android:background="#FFA500" />
+</LinearLayout>

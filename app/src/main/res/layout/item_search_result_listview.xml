@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/item_layout">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView android:id="@+id/storepicture_resultlist_imageview"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@mipmap/ic_launcher"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/storename_resultlist__textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:lines="1"
+                    android:text="商家名"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <RatingBar
+                    android:id="@+id/storerating_resultlist_ratingbar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="0.5"></RatingBar>
+
+                <TextView
+                    android:id="@+id/storerating_resultlist_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1.0"
+                    android:textColor="#00aae3"
+                    android:singleLine="true"
+                    android:text="评价分"/>
+
+                <TextView
+                    android:id="@+id/avecost_resultlist_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#62000000"
+                    android:singleLine="true"
+                    android:text="人均"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/storetype_resultlist_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1.0"
+                    android:singleLine="true"
+                    android:textColor="#62000000"
+                    android:text="商家类型"/>
+
+                <TextView
+                    android:id="@+id/distance_resultlist_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="3dp"
+                    android:singleLine="true"
+                    android:textColor="#62000000"
+                    android:text="距离"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
