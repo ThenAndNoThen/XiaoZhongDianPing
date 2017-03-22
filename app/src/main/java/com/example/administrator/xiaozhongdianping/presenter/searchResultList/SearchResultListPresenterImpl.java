@@ -104,7 +104,7 @@ public class SearchResultListPresenterImpl implements SearchResultListPresenter,
 
 
         //如果返回的结果页不是最后一页
-        if (poiResult.getPageCount() != poiResult.getQuery().getPageNum()){
+        if (poiResult.getPageCount() != poiResult.getQuery().getPageNum()+1){
             mPoiSearchModel.goToNextPoiResultPage(poiResult.getQuery().getPageNum());
         }
         //如果是最后一页

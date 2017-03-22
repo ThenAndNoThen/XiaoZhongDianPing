@@ -14,7 +14,7 @@ import java.net.URL;
  * Created by Administrator on 2016/5/9 0009.
  */
 public class HttpUtil {
-    public static String  serverUrl="http://192.168.31.122:8080/ServerProject/";
+    public static String  serverUrl="http://10.210.100.12:8080/ServerProject/";
     public static void sendHttpRequest(final String address,final String gsonstr, final
     HttpCallbackListener listener) {
         new Thread(new Runnable() {

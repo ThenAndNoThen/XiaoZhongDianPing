@@ -32,7 +32,6 @@ dependencies {
     compile 'com.android.support:support-v4:23.3.0'
     compile files('libs/AMap_Search_V3.2.1_20160308.jar')
     compile files('libs/AMap_3DMap_V3.3.1_20160419.jar')
-    compile files('F:/AndroidLab/XiaoZhongDianPing/.idea/libraries/AMap_Location_V2.4.1_20160414.jar')
     compile files('libs/AMap_Location_V2.4.1_20160414.jar')
     compile files('libs/gson-2.6.2.jar')
     compile files('libs/baidumapapi_v2_1_2.jar')

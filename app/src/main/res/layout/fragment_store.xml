@@ -10,7 +10,8 @@
         android:layout_height="48dp"
         android:layout_width="match_parent"
         android:background="@color/colorPrimary"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
         <!-- 城市选择器-->
         <LinearLayout
