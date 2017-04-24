@@ -50,7 +50,7 @@ public class StorePresenterImpl implements StorePresenter, GoodsModel.GoodsGetLi
                 case 0:
                     tmplist.add(orderBeanList.get(i));
                     break;
-                case 1:
+                case 3:
                     if(orderBeanList.get(i).getmRating()<=2){
                         tmplist.add(orderBeanList.get(i));
                     }
@@ -60,7 +60,7 @@ public class StorePresenterImpl implements StorePresenter, GoodsModel.GoodsGetLi
                         tmplist.add(orderBeanList.get(i));
                     }
                     break;
-                case 3:
+                case 1:
                     if(orderBeanList.get(i).getmRating()>4){
                         tmplist.add(orderBeanList.get(i));
                     }

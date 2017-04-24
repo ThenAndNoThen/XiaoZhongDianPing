@@ -39,7 +39,7 @@ public class OrderConfirmPresenterImpl implements OrderConfirmPresenter, OrderMo
 
     @Override
     public void initData() {
-        this.orderBean=new OrderBean("wxj","无",goodsBean.getmGoodsID(),storeBean.getmStoreID(),goodsBean.getmGoodsName(),goodsBean.getmGoodsPrice(),1,0);
+        this.orderBean=new OrderBean(myApplication.getPresentUser().getmUserID(),"无",goodsBean.getmGoodsID(),storeBean.getmStoreID(),goodsBean.getmGoodsName(),goodsBean.getmGoodsPrice(),1,0);
         orderConfirmView.initData(orderBean);
     }
 
